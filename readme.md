@@ -16,8 +16,12 @@ https://github.com/ros-drivers/nmea_navsat_driver/tree/ros2
 
 gpsmon /dev/ttyUSB0 
 
-# killall gpsd
-# killall -9 gpsd
-Remove any sockets gpsd might have left behind, as root, do:
+```console
+killall gpsd
+killall -9 gpsd
+```
 
-# rm /run/gpsd.sock
+Remove any sockets gpsd might have left behind, as root, do:
+```console
+ rm /run/gpsd.sock
+ ```
